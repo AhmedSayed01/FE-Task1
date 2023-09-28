@@ -1,0 +1,24 @@
+.mainContainer {
+    display: block;
+    height: 30vh;
+}
+.selectCont{
+    display: flex;
+    justify-content: end;
+}
+select{
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+}
+.buttonCont{
+    display: flex;
+    justify-content: end;
+}
+.saveButton{
+    background-color: #32bf4a;
+    padding: 0.1rem 1rem;
+    margin-top: 20px;
+    border-radius: 20px;
+}

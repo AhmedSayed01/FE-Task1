@@ -1,0 +1,15 @@
+.NavIcons{
+    padding: 30px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 #888;
+}
+.NavIcons span{
+    cursor: pointer;
+    font-size: x-large;
+    padding: 0.2rem 0.5rem;
+    border-radius: 15px;
+}
+.NavIcons span:hover{
+    background-color: #d1d1d1;
+}
