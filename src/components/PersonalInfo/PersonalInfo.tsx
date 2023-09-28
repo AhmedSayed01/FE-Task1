@@ -193,7 +193,7 @@ const PersonalInfo = () => {
                         {questions.length > 0 ? questions.map((item: any, index: number) => <div key={index}>
                             <p>{item.value}</p>
                             <div className='addedQuesSec'>
-                                {item.inputs.map((q: any, i: number) => q.name === "question" ? <h3>{q.values}</h3> : null)}
+                                {item.inputs.map((q: any) => q.name === "question" ? <h3>{q.values}</h3> : null)}
                                 <button onClick={() => {
                                     setOpenForm(true)
                                     setSelected(item)

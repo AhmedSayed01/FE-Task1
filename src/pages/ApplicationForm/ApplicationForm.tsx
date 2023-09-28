@@ -4,7 +4,7 @@ import PersonalInfo from "../../components/PersonalInfo/PersonalInfo";
 import Profile from "../../components/Profile/Profile";
 
 const ApplicationForm = () => {
-  const [personalInfo, setPersonalInfo] = useState<String>('');
+  const [, setPersonalInfo] = useState<String>('');
   const handleSavePersonalInfo = (img:String) =>{
     if(img) setPersonalInfo(img);
   }
