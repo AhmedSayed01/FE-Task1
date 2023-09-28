@@ -89,7 +89,22 @@ const Profile = () => {
                         </div>
                     </div>
                     <br />
+                    <div className='addedQues'>
+                        {questions.length > 0 ? questions.map((item: any, index: number) => <div key={index}>
+                            <p>{item.value}</p>
+                            <div className='addedQuesSec'>
+                                {item.inputs.map((q: any, i: number) => q.name === "question" ? <h3>{q.values}</h3> : null)}
+                                <button onClick={() => {
+                                    setOpenForm(true)
+                                    setSelected(item)
+                                }
+                                } >edit</button>
+                            </div>
+                            <hr />
+                        </div>) : null}
+                    </div>
                     <div className='addQ'>
+                        
                         {openForm ? <FormMainContainer edit={selected} close={() => setOpenForm(false)} handleQuestions={(e: any) => handleQuestions(e)} deleteItem={(e: any) => handleQuestionsDelete(e)} /> : <span onClick={() => setOpenForm(true)}><span>+</span> Add a question</span>}
                     </div>
                 </form>

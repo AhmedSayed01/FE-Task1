@@ -1,11 +1,11 @@
 import './PersonalInfo.css'
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import FormMainContainer from './forms/mainContainer';
 const PersonalInfo = () => {
     const [showStates, setShowStates] = useState<boolean[]>([false, false, false]);
     // const [newQState, setNewQState] = useState<String[]>([]);
-    const [newQState, setNewQState] = useState<any>('');
+    // const [newQState, setNewQState] = useState<any>('');
     const [openForm, setOpenForm] = useState<boolean>(false)
     const [questions, setQuestions] = useState<any>([])
     const [selected, setSelected] = useState<any>()
